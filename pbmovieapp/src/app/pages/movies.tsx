@@ -1,10 +1,9 @@
-import { StyleSheet, View } from "react-native";
-import Movies from "./pages/movies";
+import { StyleSheet, Text, View } from "react-native";
 
-export default function Index() {
+export default function Movies() {
   return (
     <View style={styles.container}>
-      <Movies />
+      <Text>Edit src/app/movies.tsx to edit this screen.</Text>
     </View>
   );
 }

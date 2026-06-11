@@ -1,10 +1,10 @@
 import { StyleSheet, View } from "react-native";
-import Movies from "./pages/movies";
 
-export default function Index() {
+export default function BottomMenu() {
   return (
     <View style={styles.container}>
-      <Movies />
+      // TODO: implement bottom menu with the link of the pages and the relative
+      icons
     </View>
   );
 }
