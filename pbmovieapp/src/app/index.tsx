@@ -1,18 +1,13 @@
-import { StyleSheet, View } from "react-native";
-import Movies from "./pages/movies";
+import { useEffect } from "react";
+
+import { useRouter } from "expo-router";
 
 export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Movies />
-    </View>
-  );
-}
+  const router = useRouter();
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+  useEffect(() => {
+    router.replace("/pages/movies" as never);
+  }, [router]);
+
+  return null;
+}
