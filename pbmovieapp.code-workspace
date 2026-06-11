@@ -1,0 +1,63 @@
+{
+  "folders": [
+    {
+      "path": "./pbmovieapp"
+    }
+  ],
+  "settings": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit",
+      "source.sortMembers": "explicit"
+    }
+  },
+  "launch": {
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "NPM install",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["i"],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Expo Doctor",
+        "runtimeExecutable": "npx",
+        "runtimeArgs": ["expo-doctor"],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Expo Run Android",
+        "runtimeExecutable": "npx",
+        "runtimeArgs": ["expo", "run:android"],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Expo Run iOS",
+        "runtimeExecutable": "npx",
+        "runtimeArgs": ["expo", "run:ios"],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "expo.vscode-expo-tools"
+    ]
+  }
+}
